@@ -42,6 +42,22 @@ var savingsAccount = {
 console.log(savingsAccount.printAccountSummary());
 5.
 ```javascript
-
+let facebookProfile = {
+    name: "Ingvar",
+    friends: 123,
+    messages: ["message1", "message2"],
+    postMessage = function postMessage(message) {
+        
+    },
+    deleteMessage = function deleteMessage(index) {
+        
+    },
+    addFriend = function addFriend() {
+        
+    },
+    removeFriend = function removeFriend() {
+        
+    }
+};
 ```
 ```
