@@ -38,8 +38,8 @@ var savingsAccount = {
         return "Welcome! \nYour balance is currently $" + this.balance + " and your interest rate is " + this.interestRatePercent + "%.";
     }
 };
-
 console.log(savingsAccount.printAccountSummary());
+```
 5.
 ```javascript
 let facebookProfile = {
@@ -60,4 +60,27 @@ let facebookProfile = {
     }
 };
 ```
+6.
+```javascript
+function Pizza (staerd, alegg) {
+  this.staerd = staerd;
+  this.alegg = alegg;
 
+  aleggsVerd = alegg.length * 495;
+  lVerd = 1000;
+  mVerd = 1500;
+  sVerd = 2000;
+
+  if (staerd === "Lítil") {
+    return staerd + "(" + alegg + ") kr. " + (aleggsVerd+lVerd);
+  } elif (staerd === "Miðstærð") {
+    return staerd + "(" + alegg + ") kr. " + (aleggsVerd+mVerd);
+  } else {
+    return staerd + "(" + alegg + ") kr. " + (aleggsVerd+sVerd);
+  }
+}
+
+let pizza1 = new Pizza("Lítil", ["ostur", "oregano"]);
+let pizza2 = new Pizza("Miðstærð", ["ostur"]);
+let pizza3 = new Pizza("Stór", ["pepperoni", "ostur", "oregano"]);
+```
