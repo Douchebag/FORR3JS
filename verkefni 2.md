@@ -18,7 +18,7 @@ let breakfast = {
 };
 ```
 4.
-```javascipt
+```javascript
 var savingsAccount = {
     balance: 1000,
     interestRatePercent: 1,
@@ -72,11 +72,11 @@ function Pizza (staerd, alegg) {
   sVerd = 2000;
 
   if (staerd === "Lítil") {
-    return staerd + "(" + alegg + ") kr. " + (aleggsVerd+lVerd);
-  } elif (staerd === "Miðstærð") {
-    return staerd + "(" + alegg + ") kr. " + (aleggsVerd+mVerd);
+    console.log(staerd + " (" + alegg + ") kr. " + (aleggsVerd+lVerd));
+  } else if (staerd === "Miðstærð") {
+    console.log(staerd + " (" + alegg + ") kr. " + (aleggsVerd+mVerd));
   } else {
-    return staerd + "(" + alegg + ") kr. " + (aleggsVerd+sVerd);
+    console.log(staerd + " (" + alegg + ") kr. " + (aleggsVerd+sVerd));
   }
 }
 
