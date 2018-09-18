@@ -23,13 +23,26 @@ templar.fly();
 zion.fly();
 
 let battlestar = {
-  __proto__: sseMajestic,
+  __proto__: sseMajestic2,
   name: "battlestar",
   speed: 25,
   life: 15,
   setLife() {
-      setLife().life += 1;
+      sseMajestic2.life += 1;
     }
 };
 
+let babylon = {
+  __proto__: sseMajestic2,
+  name: "babylon",
+  speed: 25,
+  life: 15,
+  setLife() {
+      sseMajestic2.life += 1;
+    }
+};
+
+
+battlestar.setLife();
+babylon.setLife();
 ```
