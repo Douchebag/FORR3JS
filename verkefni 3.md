@@ -46,3 +46,42 @@ let babylon = {
 battlestar.setLife();
 babylon.setLife();
 ```
+4. 
+```javascript
+class Geimflaugar {
+
+  // Constructor
+  constructor(name, speed, life) {
+    this.name = name;
+    this.speed = speed;
+    this.life = life;
+  }
+
+  // Method
+  fly() {
+    this.speed += 1;
+  }
+
+}
+
+class Undirflaugar extends Geimflaugar {
+	setLife() {
+		sseMajestic.life += 1;
+	}
+}
+
+let sseMajestic = new Geimflaugar("SSE Majestic", 25, 10);
+let templar = new Geimflaugar ("templar", 32, 10);
+let zion = new Geimflaugar ("zion", 51, 10);
+
+sseMajestic.fly();
+templar.fly();
+zion.fly();
+
+let battlestar = new Undirflaugar("battlestar", 15, 15);
+let babylon = new Undirflaugar("babylon", 15, 15);
+
+battlestar.setLife();
+babylon.setLife();
+
+```
